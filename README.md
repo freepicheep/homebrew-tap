@@ -1,3 +1,4 @@
-## Homebrew Tap for Rainaissance
+## Homebrew Tap for My Software
 
-This is the homebrew tap for https://rainaissance.app.
+This is the homebrew tap for:
+1. [Rainaissance](https://rainaissance.app).

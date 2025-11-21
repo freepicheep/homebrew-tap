@@ -1,10 +1,10 @@
 cask "rainaissance" do
-  version "1.2.1"
-  sha256 "20aba2c892e371ebaa23653d9f953547578e3563fba25806e79bebd846810aa0"
+  version "2.0.0"
+  sha256 "55e2b00c88753ad2f48c656b28f48066cfa49f84411dbf7184c592c2773ae272"
 
   url "https://github.com/freepicheep/rainaissance-releases/releases/download/v#{version}/Rainaissance.#{version}.dmg"
   name "Rainaissance"
-  desc "Customizable rain on your mac with glorious splashes"
+  desc "Customizable rain and snow on your mac. Works everywhere."
   homepage "https://rainaissance.app"
 
   app "Rainaissance.app"

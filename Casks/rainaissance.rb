@@ -1,6 +1,6 @@
 cask "rainaissance" do
-  version "2.0.1"
-  sha256 "ec80e5aa7f4b26a6716b2487b5edcfd3ad9dc0fc5d1f9a7b958b13a2dbdd4ee3"
+  version "2.1.0"
+  sha256 "33a7b06df18ce200e3f21041643ffb988ac0e8a27ec0ea26d11eaedd6927f161"
 
   url "https://github.com/freepicheep/rainaissance-releases/releases/download/v#{version}/Rainaissance.#{version}.dmg"
   name "Rainaissance"
@@ -10,7 +10,7 @@ cask "rainaissance" do
   app "Rainaissance.app"
 
   zap trash: [
-    "~/Library/Preferences/com.freepicheep.rainaissance.plist",
-    "~/Library/Application Support/Rainaissance",
+    "~/Library/Caches/com.freepicheep.Rainaissance",
+    "~/Library/Containers/com.freepicheep.Rainaissance"
   ]
 end

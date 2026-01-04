@@ -1,6 +1,6 @@
 cask "rainaissance" do
-  version "2.2.0"
-  sha256 "162d6470469c2e5ca2652ac77f9dea6aa5b64c08ebeb0ace5f826b588b3a53f1"
+  version "2.2.1"
+  sha256 "a9f7efdc38a6dd0b8978d1585c65cac3a2fb7b0ec70faf163b2d37d30e8327a6"
 
   url "https://github.com/freepicheep/rainaissance-releases/releases/download/v#{version}/Rainaissance.#{version}.dmg",
       verified: "github.com/freepicheep/rainaissance-releases/"

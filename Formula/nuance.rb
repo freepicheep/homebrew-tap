@@ -1,25 +1,25 @@
 class Nuance < Formula
   desc "A module manager for Nushell"
   homepage "https://github.com/freepicheep/nuance"
-  version "0.1.0"
+  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/freepicheep/nuance/releases/download/v0.1.0/nuance-aarch64-apple-darwin.tar.xz"
-      sha256 "1e86faaad8d8880caa06898814b3278db47dddc34769ce5412aa457dc9668316"
+      url "https://github.com/freepicheep/nuance/releases/download/v0.1.1/nuance-aarch64-apple-darwin.tar.xz"
+      sha256 "9a7f12c1ca8c2338f734991023042947e6713fc59820e3fe6846a60fb5e1c55f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/freepicheep/nuance/releases/download/v0.1.0/nuance-x86_64-apple-darwin.tar.xz"
-      sha256 "3b5a118dcad5381d68416f69e9692027e2b4398fac48fc730e11734f1854effc"
+      url "https://github.com/freepicheep/nuance/releases/download/v0.1.1/nuance-x86_64-apple-darwin.tar.xz"
+      sha256 "175df28d5620b099085add809efa7072728fe6fde67559284eada2972ee2a492"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/freepicheep/nuance/releases/download/v0.1.0/nuance-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "852bc170c6c1a904dc5f34b52bf9e40bc546e5b65055a260efc025adb2c47a04"
+      url "https://github.com/freepicheep/nuance/releases/download/v0.1.1/nuance-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "5931914c34144dbf72c45eba4e30195557bfef8cab1b5568436dedae7868afee"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/freepicheep/nuance/releases/download/v0.1.0/nuance-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "935a65ee2790c1aca1bd436d9359948e626164f2d697e69b8ccf8a362761b0e2"
+      url "https://github.com/freepicheep/nuance/releases/download/v0.1.1/nuance-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "a0d2842bd51a1e1b99249c47042984cf680bc897275754ac85304e7c862dea1b"
     end
   end
   license "MIT"

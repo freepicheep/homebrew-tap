@@ -1,25 +1,25 @@
 class Quiver < Formula
   desc "A module manager for Nushell"
   homepage "https://github.com/freepicheep/quiver"
-  version "0.2.3"
+  version "0.3.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/freepicheep/quiver/releases/download/v0.2.3/quiver-aarch64-apple-darwin.tar.xz"
-      sha256 "9abf3c6534567642fade0636e0e65cafe76f10cb8c2aa28f619ab53fd3bcf2e1"
+      url "https://github.com/freepicheep/quiver/releases/download/v0.3.0/quiver-aarch64-apple-darwin.tar.xz"
+      sha256 "f3833c6f6f7e4898b3691fb83b7fa0aa8bc6dc37e0e1dd45d78f82daa10d7b23"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/freepicheep/quiver/releases/download/v0.2.3/quiver-x86_64-apple-darwin.tar.xz"
-      sha256 "2d4f53882488e5f09f0d2b42090b945ddf4b2ebb8664c81b2d499b6f8123e12d"
+      url "https://github.com/freepicheep/quiver/releases/download/v0.3.0/quiver-x86_64-apple-darwin.tar.xz"
+      sha256 "9d7ec14e7210f542aec44514e6be3ecdda3b3353dba73b5f52cd95229fe2e981"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/freepicheep/quiver/releases/download/v0.2.3/quiver-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "149055f2f2a6b3c5188833d95908377cf5efe891edd6b9b4d9e8c198245c1c33"
+      url "https://github.com/freepicheep/quiver/releases/download/v0.3.0/quiver-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "4adb6857ca513ea5e394712477e9e4021d2024477e225a6425c282f82879977c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/freepicheep/quiver/releases/download/v0.2.3/quiver-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "fa0222609d75b12edf6795d5660df089822b4cb15f12945592f682a8569919ce"
+      url "https://github.com/freepicheep/quiver/releases/download/v0.3.0/quiver-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "4abb1f8b36c1914bdefa6fce1f1371ddf59c98a938a271a37ad4b3793c9a06f3"
     end
   end
   license "MIT"

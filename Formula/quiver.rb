@@ -1,25 +1,25 @@
 class Quiver < Formula
   desc "A module manager for Nushell"
   homepage "https://github.com/freepicheep/quiver"
-  version "0.4.0"
+  version "0.5.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/freepicheep/quiver/releases/download/v0.4.0/quiver-aarch64-apple-darwin.tar.gz"
-      sha256 "85ea92bc6dc83dc38f345b9eabba6b5d0d4529e08bed76647bec1b91d6a4f5ab"
+      url "https://github.com/freepicheep/quiver/releases/download/v0.5.0/quiver-aarch64-apple-darwin.tar.gz"
+      sha256 "bf32126459d2c9be950cda65921d18ed64c932d37a2838c71228d6aa28379be8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/freepicheep/quiver/releases/download/v0.4.0/quiver-x86_64-apple-darwin.tar.gz"
-      sha256 "00a5d2330f876a5eff1fde3e9da6f058d35e6d9dd7adff84355c0dff33679dba"
+      url "https://github.com/freepicheep/quiver/releases/download/v0.5.0/quiver-x86_64-apple-darwin.tar.gz"
+      sha256 "b8b562a71538381ff820f5f4de73acfcc31da39de3cab4c4ab9ba937ac7fc1d7"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/freepicheep/quiver/releases/download/v0.4.0/quiver-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "9bdb93d21fc018963dce2fd6465eab4951bf50ade005289b9dd2d6bb5fb15260"
+      url "https://github.com/freepicheep/quiver/releases/download/v0.5.0/quiver-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "9805eae06c71d94ef5ee515f9b6a3330c1f53a1eabf8b2df4114735d4eedf8c4"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/freepicheep/quiver/releases/download/v0.4.0/quiver-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "a8dc637338a3086d1e7398f3810f1488f2638fefe6e19af79683de1c9730fea3"
+      url "https://github.com/freepicheep/quiver/releases/download/v0.5.0/quiver-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "457835faebb84994c3b6d5795fe4a900c7840d57c536389250528eab70896945"
     end
   end
   license "MIT"
@@ -49,10 +49,10 @@ class Quiver < Formula
   end
 
   def install
-    bin.install "qv" if OS.mac? && Hardware::CPU.arm?
-    bin.install "qv" if OS.mac? && Hardware::CPU.intel?
-    bin.install "qv" if OS.linux? && Hardware::CPU.arm?
-    bin.install "qv" if OS.linux? && Hardware::CPU.intel?
+    bin.install "qv", "qvx" if OS.mac? && Hardware::CPU.arm?
+    bin.install "qv", "qvx" if OS.mac? && Hardware::CPU.intel?
+    bin.install "qv", "qvx" if OS.linux? && Hardware::CPU.arm?
+    bin.install "qv", "qvx" if OS.linux? && Hardware::CPU.intel?
 
     install_binary_aliases!
 

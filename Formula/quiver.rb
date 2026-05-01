@@ -5,21 +5,21 @@ class Quiver < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/freepicheep/quiver/releases/download/v0.5.2/quiver-aarch64-apple-darwin.tar.gz"
-      sha256 "106484c1e247bec1bf043302ffb4aef5f0b97f49efca171a7f10a4b8686a4f29"
+      sha256 "b6b8a02b24b93931658ad645948f1834d58e1f3f5b88468a247b7eda2bb58e9d"
     end
     if Hardware::CPU.intel?
       url "https://github.com/freepicheep/quiver/releases/download/v0.5.2/quiver-x86_64-apple-darwin.tar.gz"
-      sha256 "88aac8ca4087e35f3d837ce0adbafc2eeebdce82165377f128e9c39202e2b3cc"
+      sha256 "cfcb194ddf79ad630b221309065563d5ca184e1452346144ffc1b601a58d2cb8"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/freepicheep/quiver/releases/download/v0.5.2/quiver-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "fbff910c8509154cead7e241dbe2c332bd3d4c575c9acf002cab812c25ced1b3"
+      sha256 "328cdcefd67e1c13cd7925733afa1ae2d8662a0ec8edced18476011805894263"
     end
     if Hardware::CPU.intel?
       url "https://github.com/freepicheep/quiver/releases/download/v0.5.2/quiver-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "7010c02d8b6894aab6dce37090296d6bedd65063fabf44dcc4b87c253d21ef1e"
+      sha256 "979a76336b96468c7d93345642e0f9b9602db372cb7968983b6eade6e9115b01"
     end
   end
   license "MIT"

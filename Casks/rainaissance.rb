@@ -8,7 +8,7 @@ cask "rainaissance" do
   desc "Customizable rain and snow on your mac"
   homepage "https://rainaissance.app"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Rainaissance.app"
 
